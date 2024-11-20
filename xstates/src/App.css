@@ -1,0 +1,30 @@
+.wrapper{
+    text-align: center;
+}
+
+.wrapper h1{
+    margin: 20px 0px;
+}
+
+.wrapper select{
+    padding: 10px;
+    margin: 5px;
+}
+
+.dropdown{
+    width: 140px;
+}
+
+.wrapper p{
+    margin: 20px 0px;
+    font-size: 18px;
+}
+
+.wrapper p span{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.text{
+    font-size: 14px
+}
