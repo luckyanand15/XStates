@@ -17,6 +17,8 @@ function App() {
           "https://crio-location-selector.onrender.com/countries"
         );
         setCountries(resp.data);
+        setSelectedState("");
+        setSelectedCity("");
       } catch (err) {
         console.error(err);
       }
@@ -33,6 +35,7 @@ function App() {
           );
           setStates(resp.data);
           setSelectedState("");
+          setSelectedCity("");
         } catch (err) {
           console.log(err);
         }
