@@ -96,7 +96,7 @@ function App() {
         value={selectedState}
         onChange={handleStateChange}
         className="dropdown"
-        disabled={selectedCountry.length===0}
+        disabled={selectedCountry.length === 0}
       >
         <option value="" disabled>
           Select State
@@ -114,7 +114,7 @@ function App() {
         value={selectedCity}
         onChange={handleCityChange}
         className="dropdown"
-        disabled={selectedState.length===0}
+        disabled={selectedState.length === 0}
       >
         <option value="" disabled>
           Select City
@@ -126,7 +126,14 @@ function App() {
         ))}
       </select>
       {selectedCity && (
-        <p><strong>You selected</strong>{" "}<span>{selectedCity}</span>, {selectedState}, {selectedCountry}</p>
+        <p>
+          <strong>
+            You selected <span className="selectedCity">{selectedCity}</span>,{" "}
+            <span className="selectedState">
+              {selectedState}, {selectedCountry}
+            </span>
+          </strong>
+        </p>
       )}
     </div>
   );

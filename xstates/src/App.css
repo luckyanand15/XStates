@@ -20,9 +20,13 @@
     font-size: 18px;
 }
 
-.wrapper p span{
+.selectedCity{
     font-size: 22px;
     font-weight: 600;
+}
+
+.selectedState{
+    color: #808080;
 }
 
 .text{
