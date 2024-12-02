@@ -126,14 +126,7 @@ function App() {
         ))}
       </select>
       {selectedCity && (
-        <p>
-          <strong>
-            You selected <span className="selectedCity">{selectedCity}</span>,{" "}
-            <span className="selectedState">
-              {selectedState}, {selectedCountry}
-            </span>
-          </strong>
-        </p>
+        <p>You selected {selectedCity}, {selectedState}, {selectedCountry}</p>
       )}
     </div>
   );
